@@ -2,10 +2,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # balkana-try-nextjs
 
-This is a web app. Used technologies:
-## Next.js framework
+This is a web app about Balkana. Used technologies:
+## Next.js Framework
 ## React UI State and Management
-## Tailwind styling
+## Tailwind Styling
 ## Supabase DB
 
 Enjoy!
