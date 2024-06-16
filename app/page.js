@@ -1,7 +1,14 @@
-export default function Home() {
+import ImagesShow from '@/components/ImagesShow';
+
+export default async function Home() {
   return (
-    <div>
-      <h1>balkana-try-nextjs</h1>
-    </div>
+    <>
+      <div>
+        <h1>Balkana Try</h1>
+      </div>
+      <div>
+        <ImagesShow />
+      </div>
+    </>
   );
 }
