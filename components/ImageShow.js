@@ -55,10 +55,10 @@ const ImageSlideShow = ({ imagesData }) => {
   );
 
   return (
-    <div className='max-w-[2000px] max-h-[900px] w-full h-lvh m-auto py-16 px-4 relative group'>
+    <div className='max-w-[2000px] max-h-[900px] w-full h-full m-auto py-16 px-4 relative group'>
       <div
         style={{ backgroundImage: `url(${images[currentIndex].url})` }}
-        className='w-full h-full bg-center bg-cover  duration-1500 ease-in-out'
+        className='w-full h-96 bg-center bg-cover duration-1500 ease-in-out'
       ></div>
       <Arrow direction='left' onClick={prevImage} />
       <Arrow direction='right' onClick={nextImage} />
