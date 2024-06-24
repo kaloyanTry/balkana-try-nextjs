@@ -12,12 +12,12 @@ const ImageSlideShow = ({ imagesData }) => {
   // const images = imagesData.map((image) => `${CDNURL}${image.name}`);
   // console.log(images);
   const images = imagesData.map((img) => {
-    let dispImages = {
+    let displayedImages = {
       url: `${CDNURL}${img.name}`,
       alt: img.name,
     };
 
-    return dispImages;
+    return displayedImages;
   });
   // console.log(imgs);
 
@@ -26,7 +26,7 @@ const ImageSlideShow = ({ imagesData }) => {
   useEffect(() => {
     const autoPlay = setInterval(() => {
       nextImage();
-    }, 5000);
+    }, 3000);
     return () => clearInterval(autoPlay);
   });
 
@@ -55,10 +55,10 @@ const ImageSlideShow = ({ imagesData }) => {
   );
 
   return (
-    <div className='max-w-[2000px] max-h-[900px] w-full h-full m-auto py-16 px-4 relative group'>
+    <div className='max-w-[2000px] max-h-[900px] w-full h-full m-auto py-8 px-4 relative group'>
       <div
         style={{ backgroundImage: `url(${images[currentIndex].url})` }}
-        className='w-full h-96 bg-center bg-cover duration-1500 ease-in-out'
+        className='w-full h-96 bg-center bg-cover duration-300'
       ></div>
       <Arrow direction='left' onClick={prevImage} />
       <Arrow direction='right' onClick={nextImage} />
